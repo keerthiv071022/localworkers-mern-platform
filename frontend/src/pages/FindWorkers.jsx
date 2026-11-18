@@ -1,6 +1,6 @@
 
 import { useEffect, useState } from "react";
-import axios from "axios";
+import api from "../api";
 import { Link, useSearchParams } from "react-router-dom";
 import {
   Search,
@@ -12,7 +12,7 @@ import {
 } from "lucide-react";
 import "./FindWorkers.css";
 
-const API_URL = "http://localhost:5000/api/workers";
+
 
 function FindWorkers() {
   const [searchParams] = useSearchParams();
@@ -41,7 +41,7 @@ function FindWorkers() {
       setError("");
 
       try {
-        const response = await axios.get(API_URL, {
+       const response = await api.get("/api/workers", {
           params: {
             skill: skill.trim() || undefined,
             location: location.trim() || undefined,

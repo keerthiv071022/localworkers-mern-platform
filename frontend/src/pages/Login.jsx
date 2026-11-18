@@ -1,6 +1,6 @@
 
 import { useState } from "react";
-import axios from "axios";
+import api from "../api";
 import { Link, useNavigate } from "react-router-dom";
 import {
   Mail,
@@ -40,13 +40,10 @@ const handleSubmit = async (e) => {
   setLoading(true);
 
   try {
-    const response = await axios.post(
-      "http://localhost:5000/api/auth/login",
-      {
-        email: formData.email,
-        password: formData.password,
-      }
-    );
+ const response = await api.post("/api/auth/login", {
+  email: formData.email,
+  password: formData.password,
+});
 
     const { token, user } = response.data;
 
