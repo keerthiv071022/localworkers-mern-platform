@@ -1,8 +1,8 @@
 
 import { useState } from "react";
-import axios from "axios";
+import api from "../api";
 import { Star } from "lucide-react";
-import "./ReviewForm.css";
+import "./reviewForm.css";
 
 function ReviewForm({ serviceRequestId, onSuccess, onCancel }) {
   const [rating, setRating] = useState(0);
@@ -24,8 +24,8 @@ function ReviewForm({ serviceRequestId, onSuccess, onCancel }) {
     try {
       const token = sessionStorage.getItem("token");
 
-      const response = await axios.post(
-        "http://localhost:5000/api/reviews",
+const response = await api.post(
+  "/api/reviews",
         {
           serviceRequestId,
           rating,
