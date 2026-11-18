@@ -1,0 +1,246 @@
+
+/* =========================================
+   CUSTOMER REVIEW FORM
+   PREMIUM DARK GOLD | BEIGE | CREAM
+========================================= */
+
+.review-form {
+  background: var(--surface, #FAF5EA);
+  border: 1px solid var(--border, #D8C7A9);
+  border-radius: 16px;
+  padding: 24px;
+  margin-top: 20px;
+  box-shadow: 0 8px 24px rgba(75, 52, 20, 0.09);
+}
+
+/* =========================================
+   FORM HEADING
+========================================= */
+
+.review-form h3 {
+  color: var(--text-primary, #30271B);
+  font-size: 21px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.review-form > p {
+  color: var(--text-secondary, #625440);
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 18px;
+}
+
+/* =========================================
+   STAR RATING
+========================================= */
+
+.review-stars {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 22px;
+}
+
+.review-stars button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  color: #B9AB92;
+  padding: 5px;
+  cursor: pointer;
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+/* SELECTED AND HOVERED STARS */
+
+.review-stars button:hover:not(:disabled),
+.review-stars button.selected {
+  color: #D59A22;
+}
+
+.review-stars button:hover:not(:disabled) {
+  transform: scale(1.12);
+}
+
+.review-stars button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* =========================================
+   REVIEW LABEL
+========================================= */
+
+.review-form label {
+  display: block;
+  color: var(--text-primary, #30271B);
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+/* =========================================
+   REVIEW TEXTAREA
+========================================= */
+
+.review-form textarea {
+  display: block;
+  width: 100%;
+  min-height: 110px;
+  padding: 14px;
+  border: 1px solid var(--border, #D8C7A9);
+  border-radius: 10px;
+  background: #FFFDF8;
+  color: var(--text-primary, #30271B);
+  font: inherit;
+  resize: vertical;
+  box-sizing: border-box;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.review-form textarea::placeholder {
+  color: var(--text-muted, #82745E);
+}
+
+.review-form textarea:focus {
+  outline: none;
+  border-color: var(--primary, #80601E);
+  box-shadow: 0 0 0 3px rgba(128, 96, 30, 0.13);
+}
+
+/* CHARACTER COUNT */
+
+.review-form small {
+  display: block;
+  text-align: right;
+  color: var(--text-muted, #82745E);
+  margin-top: 7px;
+}
+
+/* =========================================
+   VALIDATION ERROR
+========================================= */
+
+.review-error {
+  color: #A43E37 !important;
+  font-size: 13px;
+  margin-top: 12px;
+  line-height: 1.6;
+}
+
+/* =========================================
+   FORM ACTIONS
+========================================= */
+
+.review-form-actions {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.review-cancel-btn,
+.review-submit-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 20px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+/* =========================================
+   CANCEL BUTTON
+========================================= */
+
+.review-cancel-btn {
+  background: var(--primary-light, #F1E5CC);
+  color: var(--primary-dark, #604515);
+  border: 1px solid var(--border, #D8C7A9);
+}
+
+.review-cancel-btn:hover:not(:disabled) {
+  background: #E5D2AF;
+}
+
+/* =========================================
+   SUBMIT REVIEW BUTTON
+========================================= */
+
+.review-submit-btn {
+  background: var(--primary, #80601E);
+  color: #FFF8E9;
+  border: 1px solid var(--primary, #80601E);
+}
+
+.review-submit-btn:hover:not(:disabled) {
+  background: var(--primary-dark, #604515);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(96, 69, 21, 0.18);
+}
+
+/* DISABLED BUTTONS */
+
+.review-submit-btn:disabled,
+.review-cancel-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+/* =========================================
+   KEYBOARD ACCESSIBILITY
+========================================= */
+
+.review-stars button:focus-visible,
+.review-cancel-btn:focus-visible,
+.review-submit-btn:focus-visible {
+  outline: 3px solid var(--secondary, #C7AD79);
+  outline-offset: 3px;
+}
+
+/* =========================================
+   RESPONSIVE DESIGN
+========================================= */
+
+@media (max-width: 600px) {
+  .review-form {
+    padding: 18px;
+  }
+
+  .review-form-actions button {
+    flex: 1;
+  }
+}
+
+@media (max-width: 400px) {
+  .review-form {
+    padding: 16px;
+  }
+
+  .review-form-actions {
+    flex-direction: column;
+  }
+
+  .review-form-actions button {
+    width: 100%;
+  }
+}
+

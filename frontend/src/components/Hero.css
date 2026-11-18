@@ -1,0 +1,489 @@
+
+/* =========================================
+   LOCALWORKERS - PREMIUM HERO SECTION
+   DARK GOLD | BEIGE | CREAM
+========================================= */
+
+.hero {
+  background: linear-gradient(
+    135deg,
+    #F8F0E1 0%,
+    #E9DCC5 55%,
+    #F1E5CC 100%
+  );
+  padding: 85px 0 95px;
+  overflow: hidden;
+}
+
+.hero-container {
+  max-width: 1200px;
+  width: 92%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  align-items: center;
+  gap: 65px;
+}
+
+/* =========================================
+   HERO CONTENT
+========================================= */
+
+.hero-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  background: #F1E5CC;
+  color: #604515;
+  border: 1px solid #D8C7A9;
+  border-radius: 30px;
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.hero-content h1 {
+  max-width: 680px;
+  font-size: clamp(38px, 4.5vw, 57px);
+  line-height: 1.18;
+  letter-spacing: -2px;
+  color: #30271B;
+}
+
+.hero-content h1 span {
+  display: block;
+  color: #80601E;
+}
+
+.hero-description {
+  max-width: 520px;
+  margin-top: 22px;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #625440;
+}
+
+/* =========================================
+   HERO SEARCH BOX
+========================================= */
+
+.hero-search {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  background: #FAF5EA;
+  border: 1px solid #D8C7A9;
+  padding: 12px;
+  border-radius: 14px;
+  box-shadow: 0 12px 35px rgba(75, 52, 20, 0.10);
+  margin-top: 35px;
+}
+
+.search-field {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  min-width: 0;
+  padding: 8px;
+  color: #80601E;
+}
+
+.search-field div {
+  min-width: 0;
+}
+
+.search-field label {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  color: #30271B;
+  margin-bottom: 3px;
+}
+
+.search-field input {
+  width: 100%;
+  min-width: 0;
+  border: none;
+  outline: none;
+  font-size: 13px;
+  color: #30271B;
+  background: transparent;
+}
+
+.search-field input::placeholder {
+  color: #82745E;
+}
+
+.search-divider {
+  width: 1px;
+  height: 42px;
+  background: #D8C7A9;
+}
+
+/* SEARCH BUTTON */
+
+.hero-search-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: none;
+  border-radius: 9px;
+  padding: 15px 20px;
+  background: #80601E;
+  color: #FFF8E9;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  transition:
+    background 0.25s ease,
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.hero-search-btn:hover {
+  background: #604515;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(96, 69, 21, 0.18);
+}
+
+/* =========================================
+   TRUST POINTS
+========================================= */
+
+.hero-trust {
+  display: flex;
+  gap: 25px;
+  margin-top: 28px;
+  flex-wrap: wrap;
+}
+
+.hero-trust div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #625440;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.hero-trust svg {
+  color: #80601E;
+}
+
+/* =========================================
+   HERO VISUAL
+========================================= */
+
+.hero-visual {
+  position: relative;
+  padding: 20px;
+}
+
+.hero-visual-main {
+  background: #E5D2AF;
+  border: 1px solid #D8C7A9;
+  border-radius: 28px;
+  padding: 27px 27px 20px;
+  min-height: 420px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  box-shadow: 0 15px 40px rgba(75, 52, 20, 0.12);
+}
+
+/* TOP LABEL */
+
+.visual-top-label {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  font-weight: 800;
+  color: #604515;
+}
+
+.visual-dot {
+  width: 8px;
+  height: 8px;
+  background: #B89245;
+  border-radius: 50%;
+}
+
+/* =========================================
+   WORKER IMAGE
+========================================= */
+
+.visual-illustration {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 310px;
+  padding: 0;
+  overflow: hidden;
+  border-radius: 14px;
+  background: #D8C7A9;
+}
+
+.hero-worker-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 14px;
+  display: block;
+}
+
+/* =========================================
+   OPTIONAL CSS HOUSE ILLUSTRATION
+   PRESERVED FOR COMPATIBILITY
+========================================= */
+
+.visual-circle {
+  width: 230px;
+  height: 230px;
+  background: #D8C7A9;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.visual-house {
+  position: relative;
+  width: 135px;
+  height: 115px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.house-roof {
+  position: absolute;
+  top: 0;
+  width: 100px;
+  height: 100px;
+  background: #80601E;
+  transform: rotate(45deg);
+  border-radius: 9px;
+}
+
+.house-body {
+  position: relative;
+  z-index: 1;
+  width: 115px;
+  height: 78px;
+  background: #FAF5EA;
+  border-radius: 5px 5px 0 0;
+}
+
+.house-window {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 27px;
+  height: 25px;
+  background: #F1E5CC;
+  border: 3px solid #80601E;
+}
+
+.house-door {
+  position: absolute;
+  bottom: 0;
+  right: 15px;
+  width: 28px;
+  height: 49px;
+  background: #B89245;
+  border-radius: 5px 5px 0 0;
+}
+
+/* DECORATIVE TOOL ICONS */
+
+.visual-tool {
+  position: absolute;
+  background: #FAF5EA;
+  width: 53px;
+  height: 53px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  font-size: 25px;
+  box-shadow: 0 8px 20px rgba(75, 52, 20, 0.12);
+}
+
+.tool-one {
+  left: 12%;
+  top: 35%;
+}
+
+.tool-two {
+  right: 12%;
+  bottom: 22%;
+}
+
+/* =========================================
+   BOTTOM VISUAL CARD
+========================================= */
+
+.visual-bottom {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  background: rgba(255, 248, 233, 0.88);
+  padding: 18px;
+  border: 1px solid rgba(216, 199, 169, 0.7);
+  border-radius: 15px;
+  margin-top: 12px;
+}
+
+.visual-bottom h3 {
+  font-size: 16px;
+  color: #604515;
+}
+
+.visual-bottom p {
+  font-size: 12px;
+  margin-top: 4px;
+  color: #625440;
+}
+
+.visual-arrow {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  background: #80601E;
+  color: #FFF8E9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+/* =========================================
+   FLOATING INFORMATION CARD
+========================================= */
+
+.hero-floating-card {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #FAF5EA;
+  border: 1px solid #D8C7A9;
+  padding: 15px 20px;
+  border-radius: 13px;
+  box-shadow: 0 12px 30px rgba(75, 52, 20, 0.13);
+  margin-top: 12px;
+  margin-left: -25px;
+}
+
+.floating-icon {
+  width: 42px;
+  height: 42px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #F1E5CC;
+  color: #80601E;
+  border-radius: 11px;
+}
+
+.hero-floating-card strong {
+  font-size: 13px;
+  color: #30271B;
+}
+
+.hero-floating-card p {
+  font-size: 11px;
+  color: #625440;
+}
+
+/* =========================================
+   RESPONSIVE DESIGN
+========================================= */
+
+@media (max-width: 950px) {
+  .hero-container {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
+  .hero-content {
+    max-width: 700px;
+  }
+
+  .hero-visual {
+    max-width: 550px;
+    width: 100%;
+    margin: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .visual-illustration {
+    height: 260px;
+  }
+
+  .hero-floating-card {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero {
+    padding: 55px 0;
+  }
+
+  .hero-content h1 {
+    letter-spacing: -1.2px;
+  }
+
+  .hero-search {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 5px;
+  }
+
+  .search-divider {
+    width: 100%;
+    height: 1px;
+  }
+
+  .hero-search-btn {
+    width: 100%;
+  }
+
+  .hero-trust {
+    gap: 12px;
+  }
+
+  .hero-visual {
+    padding: 12px 0;
+  }
+
+  .hero-visual-main {
+    min-height: 350px;
+    padding: 20px;
+  }
+
+  .visual-circle {
+    width: 190px;
+    height: 190px;
+  }
+
+  .hero-floating-card {
+    margin-left: 0;
+  }
+}

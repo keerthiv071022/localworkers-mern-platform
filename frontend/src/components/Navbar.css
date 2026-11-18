@@ -1,0 +1,252 @@
+
+/* =========================================
+   LOCALWORKERS - PREMIUM NAVBAR
+   DARK GOLD | BEIGE | CREAM
+========================================= */
+
+.navbar {
+  width: 100%;
+  background: #FAF5EA;
+  border-bottom: 1px solid #D8C7A9;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 12px rgba(75, 52, 20, 0.05);
+}
+
+/* NAVBAR CONTAINER */
+
+.navbar-container {
+  max-width: 1200px;
+  height: 78px;
+  margin: auto;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* LOGO */
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-heading);
+  font-size: 21px;
+  font-weight: 800;
+  color: var(--primary-dark, #604515);
+  white-space: nowrap;
+}
+
+.navbar-logo > span:last-child > span {
+  color: #B89245;
+}
+
+.logo-icon {
+  width: 38px;
+  height: 38px;
+  background: var(--primary, #80601E);
+  color: #FFF8E9;
+  border-radius: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 3px 10px rgba(96, 69, 21, 0.14);
+}
+
+/* DESKTOP NAVIGATION */
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.navbar-links a {
+  font-size: 14px;
+  font-weight: 600;
+  color: #625440;
+  transition: color 0.2s ease;
+}
+
+.navbar-links a:hover,
+.navbar-links a.active {
+  color: var(--primary, #80601E);
+}
+
+/* NAVBAR ACTIONS */
+
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.login-link {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary, #30271B);
+}
+
+.login-link:hover {
+  color: var(--primary, #80601E);
+}
+
+/* REGISTER / LOGOUT BUTTON */
+
+.navbar-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  padding: 11px 19px;
+  background: var(--primary, #80601E);
+  color: #FFF8E9;
+  border: 1px solid var(--primary, #80601E);
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.navbar-cta:hover {
+  background: var(--primary-dark, #604515);
+  color: #FFF8E9;
+  transform: translateY(-1px);
+  box-shadow: 0 5px 14px rgba(96, 69, 21, 0.16);
+}
+
+/* MOBILE MENU BUTTON */
+
+.mobile-menu {
+  display: none;
+  background: transparent;
+  border: none;
+  color: var(--primary, #80601E);
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.mobile-menu:hover {
+  background: var(--primary-light, #F1E5CC);
+}
+
+/* MOBILE LINKS HIDDEN ON DESKTOP */
+
+.mobile-nav-login,
+.mobile-nav-register {
+  display: none;
+}
+
+/* =========================================
+   TABLET RESPONSIVENESS
+========================================= */
+
+@media (max-width: 900px) {
+  .navbar-links {
+    gap: 15px;
+  }
+
+  .navbar-links a {
+    font-size: 12px;
+  }
+
+  .navbar-actions {
+    gap: 12px;
+  }
+}
+
+/* =========================================
+   MOBILE NAVIGATION
+========================================= */
+
+@media (max-width: 700px) {
+  .navbar-container {
+    position: relative;
+    height: 70px;
+    padding: 0 20px;
+  }
+
+  .navbar-links,
+  .navbar-actions {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navbar-links.menu-open {
+    display: flex;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: 15px 22px 22px;
+    background: #FAF5EA;
+    border-bottom: 1px solid #D8C7A9;
+    box-shadow: 0 12px 24px rgba(75, 52, 20, 0.12);
+  }
+
+  .navbar-links.menu-open a {
+    padding: 12px 0;
+    font-size: 14px;
+    color: #604515;
+  }
+
+  .navbar-links.menu-open a:hover,
+  .navbar-links.menu-open a.active {
+    color: #A87922;
+  }
+
+  .navbar-links.menu-open .mobile-nav-login,
+  .navbar-links.menu-open .mobile-nav-register {
+    display: block;
+  }
+
+  .navbar-links.menu-open .mobile-nav-register {
+    background: var(--primary, #80601E);
+    color: #FFF8E9;
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 8px;
+    text-align: center;
+    font-weight: 700;
+  }
+
+  .navbar-links.menu-open .mobile-nav-register:hover {
+    background: var(--primary-dark, #604515);
+    color: #FFF8E9;
+  }
+}
+
+/* SMALL MOBILE SCREENS */
+
+@media (max-width: 400px) {
+  .navbar-container {
+    padding: 0 15px;
+  }
+
+  .navbar-logo {
+    font-size: 19px;
+  }
+
+  .logo-icon {
+    width: 36px;
+    height: 36px;
+  }
+}

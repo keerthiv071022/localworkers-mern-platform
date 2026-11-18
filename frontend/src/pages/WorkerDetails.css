@@ -1,0 +1,494 @@
+
+/* =========================================
+   WORKER DETAILS PAGE
+   PREMIUM GOLD, BEIGE & CREAM THEME
+========================================= */
+
+.worker-details-page {
+  min-height: 100vh;
+  background: var(--background, #E9DCC5);
+  padding: 42px 20px 80px;
+}
+
+.worker-details-container {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+/* BACK NAVIGATION */
+
+.worker-details-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  margin-bottom: 28px;
+  color: var(--primary, #80601E);
+  font-weight: 700;
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+
+.worker-details-back:hover {
+  color: var(--primary-dark, #604515);
+}
+
+/* =========================================
+   PROFILE HERO
+========================================= */
+
+.worker-details-hero {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 42px;
+  margin-bottom: 30px;
+  border-radius: 22px;
+  background: linear-gradient(
+    135deg,
+    #49320F 0%,
+    #80601E 55%,
+    #A98136 100%
+  );
+  border: 1px solid #9D7A3C;
+  box-shadow: 0 14px 36px rgba(80, 55, 18, 0.16);
+  color: #FFF8E9;
+}
+
+.worker-details-avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 110px;
+  height: 110px;
+  border-radius: 24px;
+  background: rgba(255, 248, 233, 0.14);
+  border: 1px solid rgba(255, 248, 233, 0.35);
+  color: #FFF8E9;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.worker-details-intro {
+  min-width: 0;
+}
+
+.worker-details-eyebrow {
+  display: block;
+  margin-bottom: 12px;
+  color: #F4DEAE;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.worker-details-intro h1 {
+  margin: 0 0 14px;
+  color: #FFF8E9;
+  font-size: clamp(28px, 4vw, 40px);
+  line-height: 1.2;
+  letter-spacing: -1px;
+}
+
+.worker-details-intro > p {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-bottom: 20px;
+  color: #F6E9CF;
+}
+
+.worker-details-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.worker-details-badges span {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 14px;
+  border-radius: 30px;
+  background: rgba(255, 248, 233, 0.16);
+  border: 1px solid rgba(255, 248, 233, 0.22);
+  color: #FFF8E9;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* =========================================
+   MAIN CONTENT
+========================================= */
+
+.worker-details-layout {
+  display: grid;
+  grid-template-columns:
+    minmax(0, 1.5fr) minmax(0, 1fr);
+  gap: 24px;
+  align-items: start;
+}
+
+.worker-details-card {
+  min-width: 0;
+  padding: 32px;
+  border: 1px solid var(--border, #D8C7A9);
+  border-radius: 18px;
+  background: var(--surface, #FAF5EA);
+  box-shadow: var(
+    --shadow-sm,
+    0 2px 8px rgba(75, 52, 20, 0.06)
+  );
+}
+
+.worker-details-card h2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 16px;
+  color: var(--primary-dark, #604515);
+  font-size: 22px;
+}
+
+.worker-details-card > p {
+  color: var(--text-secondary, #625440);
+  line-height: 1.7;
+}
+
+/* =========================================
+   SKILLS
+========================================= */
+
+.worker-details-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 26px;
+}
+
+.worker-details-skills span {
+  padding: 11px 17px;
+  border: 1px solid #DCC69B;
+  border-radius: 30px;
+  background: #F1E5CC;
+  color: #6D501C;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.worker-details-skills p {
+  color: var(--text-secondary, #625440);
+}
+
+/* =========================================
+   PROFESSIONAL OVERVIEW
+========================================= */
+
+.worker-details-info {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 18px 0;
+  border-bottom: 1px solid var(--border, #D8C7A9);
+  color: var(--primary, #80601E);
+}
+
+.worker-details-info:last-child {
+  border-bottom: none;
+}
+
+.worker-details-info > svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.worker-details-info div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  min-width: 0;
+}
+
+.worker-details-info strong {
+  color: var(--text-primary, #30271B);
+  font-size: 15px;
+  overflow-wrap: anywhere;
+}
+
+.worker-details-info span {
+  color: var(--text-secondary, #625440);
+  font-size: 13px;
+  overflow-wrap: anywhere;
+}
+
+/* =========================================
+   REQUEST SERVICE BUTTON
+========================================= */
+
+.worker-details-request {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 26px;
+  padding: 15px 20px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  background: var(--primary, #80601E);
+  color: #FFF9EE;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  transition:
+    background 0.25s ease,
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.worker-details-request:hover:not(:disabled) {
+  background: var(--primary-dark, #604515);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(96, 69, 21, 0.18);
+}
+
+.worker-details-request:disabled {
+  background: #E3D8C5;
+  color: #82745E;
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}
+
+.worker-details-note {
+  margin-top: 14px;
+  color: var(--text-secondary, #625440);
+  font-size: 13px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* =========================================
+   LOADING AND ERROR STATES
+========================================= */
+
+.worker-details-message {
+  padding: 50px 24px;
+  border: 1px solid var(--border, #D8C7A9);
+  border-radius: 16px;
+  background: var(--surface, #FAF5EA);
+  color: var(--text-secondary, #625440);
+  text-align: center;
+  line-height: 1.7;
+}
+
+/* =========================================
+   CUSTOMER REVIEWS SECTION
+========================================= */
+
+.worker-reviews-section {
+  margin-top: 28px;
+  padding: 28px;
+}
+
+.worker-reviews-section h2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 22px;
+  color: var(--primary-dark, #604515);
+}
+
+/* =========================================
+   AVERAGE RATING
+========================================= */
+
+.worker-rating-summary {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  background: #F1E5CC;
+  border: 1px solid #DCC69B;
+  border-radius: 14px;
+  padding: 20px;
+  margin-bottom: 24px;
+}
+
+.worker-rating-summary svg {
+  color: #A87922;
+}
+
+.worker-rating-summary strong {
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--primary-dark, #604515);
+}
+
+.worker-rating-summary span {
+  color: var(--text-secondary, #625440);
+  font-size: 14px;
+}
+
+/* =========================================
+   REVIEW CARDS
+========================================= */
+
+.worker-reviews-list {
+  display: grid;
+  gap: 18px;
+}
+
+.worker-review-card {
+  background: #FFFDF8;
+  border: 1px solid var(--border, #D8C7A9);
+  border-radius: 14px;
+  padding: 22px;
+  transition:
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.worker-review-card:hover {
+  border-color: #C7AD79;
+  box-shadow: 0 8px 24px rgba(75, 52, 20, 0.10);
+}
+
+.worker-review-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.worker-review-header strong {
+  color: var(--primary-dark, #604515);
+  font-size: 16px;
+}
+
+.worker-review-header span {
+  display: flex;
+  gap: 3px;
+  color: #A87922;
+}
+
+.worker-review-card p {
+  color: var(--text-secondary, #625440);
+  font-size: 14px;
+  line-height: 1.7;
+  margin-bottom: 14px;
+}
+
+.worker-review-card small {
+  color: var(--text-muted, #82745E);
+  font-size: 12px;
+}
+
+/* =========================================
+   SAVE WORKER BUTTON
+========================================= */
+
+.worker-save-container {
+  margin-top: 20px;
+}
+
+.worker-save-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px 22px;
+  border: 1px solid var(--primary, #80601E);
+  border-radius: 10px;
+  background: #FFFDF8;
+  color: var(--primary-dark, #604515);
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.worker-save-button:hover:not(:disabled) {
+  background: var(--primary-light, #F1E5CC);
+  transform: translateY(-1px);
+}
+
+.worker-save-button.saved {
+  background: var(--primary, #80601E);
+  border-color: var(--primary, #80601E);
+  color: #FFF9EE;
+}
+
+.worker-save-button.saved:hover:not(:disabled) {
+  background: var(--primary-dark, #604515);
+}
+
+.worker-save-button:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.worker-save-error {
+  margin-top: 10px;
+  color: var(--danger, #B94B43);
+  font-size: 13px;
+}
+
+/* =========================================
+   RESPONSIVE DESIGN
+========================================= */
+
+@media (max-width: 800px) {
+  .worker-details-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .worker-details-page {
+    padding: 24px 15px 60px;
+  }
+
+  .worker-details-hero {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 28px 24px;
+  }
+
+  .worker-details-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 18px;
+    font-size: 34px;
+  }
+
+  .worker-details-card {
+    padding: 24px;
+  }
+
+  .worker-details-card h2 {
+    font-size: 20px;
+  }
+
+  .worker-reviews-section {
+    padding: 18px;
+  }
+
+  .worker-rating-summary {
+    padding: 16px;
+  }
+
+  .worker-review-card {
+    padding: 18px;
+  }
+
+  .worker-rating-summary strong {
+    font-size: 23px;
+  }
+}

@@ -1,0 +1,247 @@
+
+/* =========================================
+   FEATURED WORKERS
+   PREMIUM DARK GOLD | BEIGE | CREAM
+========================================= */
+
+.featured-section {
+  padding: 85px 0;
+  background: var(--background, #E9DCC5);
+}
+
+/* SECTION HEADING */
+
+.featured-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 38px;
+}
+
+.section-eyebrow {
+  display: inline-block;
+  color: var(--primary, #80601E);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  margin-bottom: 12px;
+}
+
+.featured-heading h2 {
+  margin-bottom: 10px;
+  color: var(--text-primary, #30271B);
+}
+
+.featured-heading p {
+  font-size: 15px;
+  color: var(--text-secondary, #625440);
+}
+
+/* VIEW ALL LINK */
+
+.featured-view-all {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: var(--primary-dark, #604515);
+  font-size: 14px;
+  font-weight: 700;
+  white-space: nowrap;
+  padding-bottom: 5px;
+  transition: color 0.2s ease;
+}
+
+.featured-view-all:hover {
+  color: var(--accent, #B89245);
+}
+
+/* =========================================
+   WORKERS GRID
+========================================= */
+
+.workers-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+/* WORKER CARD */
+
+.worker-card {
+  min-width: 0;
+  background: var(--surface, #FAF5EA);
+  border: 1px solid var(--border, #D8C7A9);
+  border-radius: 16px;
+  padding: 25px;
+  box-shadow: var(--shadow-sm);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.worker-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--accent, #B89245);
+  box-shadow: var(--shadow-md);
+}
+
+/* =========================================
+   CARD HEADER
+========================================= */
+
+.worker-card-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 23px;
+}
+
+/* WORKER AVATARS */
+
+.worker-avatar {
+  width: 62px;
+  height: 62px;
+  flex-shrink: 0;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-heading);
+  font-size: 20px;
+  font-weight: 800;
+  border: 1px solid rgba(128, 96, 30, 0.12);
+}
+
+.avatar-green {
+  background: #F1E5CC;
+  color: #604515;
+}
+
+.avatar-blue {
+  background: #E8D9BD;
+  color: #71521D;
+}
+
+.avatar-orange {
+  background: #F7E8CA;
+  color: #8A5B19;
+}
+
+/* =========================================
+   RATINGS
+========================================= */
+
+.worker-rating {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #A87922;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.worker-rating span {
+  color: var(--text-muted, #82745E);
+  font-weight: 500;
+}
+
+/* =========================================
+   WORKER INFORMATION
+========================================= */
+
+.worker-name-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.worker-name-row h3 {
+  font-size: 18px;
+  color: var(--text-primary, #30271B);
+}
+
+.verified-icon {
+  color: #397451;
+}
+
+.worker-profession {
+  color: var(--primary-dark, #604515);
+  font-size: 14px;
+  font-weight: 700;
+  margin-top: 5px;
+}
+
+.worker-experience {
+  font-size: 13px;
+  margin-top: 8px;
+  color: var(--text-secondary, #625440);
+}
+
+.worker-location {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: var(--text-secondary, #625440);
+  font-size: 13px;
+  margin-top: 13px;
+}
+
+.worker-location svg {
+  flex-shrink: 0;
+  color: var(--primary, #80601E);
+}
+
+/* =========================================
+   VIEW PROFILE LINK
+========================================= */
+
+.worker-profile-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  border-top: 1px solid var(--border, #D8C7A9);
+  margin-top: 22px;
+  padding-top: 16px;
+  color: var(--primary-dark, #604515);
+  font-size: 13px;
+  font-weight: 700;
+  transition: color 0.2s ease;
+}
+
+.worker-profile-link:hover {
+  color: var(--accent, #B89245);
+}
+
+/* =========================================
+   RESPONSIVE DESIGN
+========================================= */
+
+@media (max-width: 850px) {
+  .workers-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .featured-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .workers-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .featured-section {
+    padding: 60px 0;
+  }
+
+  .worker-card {
+    padding: 22px;
+  }
+}

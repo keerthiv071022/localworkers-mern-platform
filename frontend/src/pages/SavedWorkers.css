@@ -1,0 +1,357 @@
+
+/* =========================================
+   SAVED WORKERS PAGE
+   PREMIUM DARK GOLD | BEIGE | CREAM
+========================================= */
+
+.saved-workers-page {
+  min-height: 100vh;
+  background: var(--background, #E9DCC5);
+  padding: 40px 20px 80px;
+}
+
+.saved-workers-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* =========================================
+   BACK NAVIGATION
+========================================= */
+
+.saved-workers-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 30px;
+  color: var(--primary-dark, #604515);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.saved-workers-back:hover {
+  color: var(--accent, #B89245);
+  transform: translateX(-3px);
+}
+
+/* =========================================
+   PAGE HEADER
+========================================= */
+
+.saved-workers-header {
+  margin-bottom: 35px;
+}
+
+.saved-workers-header span {
+  display: block;
+  color: var(--primary, #80601E);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.saved-workers-header h1 {
+  color: var(--text-primary, #30271B);
+  font-size: clamp(28px, 4vw, 38px);
+  margin-bottom: 12px;
+  letter-spacing: -0.8px;
+}
+
+.saved-workers-header p {
+  color: var(--text-secondary, #625440);
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+/* =========================================
+   WORKER GRID
+========================================= */
+
+.saved-workers-grid {
+  display: grid;
+  grid-template-columns:
+    repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+  gap: 24px;
+}
+
+/* =========================================
+   WORKER CARD
+========================================= */
+
+.saved-worker-card {
+  min-width: 0;
+  background: var(--surface, #FAF5EA);
+  border: 1px solid var(--border, #D8C7A9);
+  border-radius: 18px;
+  padding: 28px;
+  box-shadow: 0 5px 20px rgba(75, 52, 20, 0.07);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.saved-worker-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent, #B89245);
+  box-shadow: 0 12px 30px rgba(75, 52, 20, 0.13);
+}
+
+/* =========================================
+   WORKER AVATAR
+========================================= */
+
+.saved-worker-avatar {
+  width: 62px;
+  height: 62px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--primary-light, #F1E5CC);
+  color: var(--primary-dark, #604515);
+  border: 1px solid #E2D0AD;
+  border-radius: 16px;
+  font-size: 27px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.saved-worker-card h2 {
+  color: var(--text-primary, #30271B);
+  font-size: 21px;
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+
+/* =========================================
+   WORKER INFORMATION
+========================================= */
+
+.saved-worker-location,
+.saved-worker-experience {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: var(--text-secondary, #625440);
+  font-size: 14px;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.saved-worker-location svg,
+.saved-worker-experience svg {
+  color: var(--primary, #80601E);
+  flex-shrink: 0;
+}
+
+/* =========================================
+   SKILL BADGES
+========================================= */
+
+.saved-worker-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 18px 0;
+}
+
+.saved-worker-skills span {
+  background: var(--primary-light, #F1E5CC);
+  color: var(--primary-dark, #604515);
+  border: 1px solid #E2D0AD;
+  padding: 7px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* =========================================
+   AVAILABILITY INDICATORS
+========================================= */
+
+/* AVAILABLE - GREEN */
+
+.saved-worker-available {
+  color: var(--success, #397451);
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 22px;
+}
+
+/* UNAVAILABLE - AMBER */
+
+.saved-worker-unavailable {
+  color: var(--warning, #A87922);
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 22px;
+}
+
+/* =========================================
+   ACTION BUTTONS
+========================================= */
+
+.saved-worker-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding-top: 18px;
+  border-top: 1px solid var(--border, #D8C7A9);
+}
+
+.saved-worker-actions a,
+.saved-worker-actions button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  padding: 11px 15px;
+  border-radius: 9px;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+/* VIEW PROFILE BUTTON */
+
+.saved-worker-actions a {
+  flex: 1;
+  background: var(--primary, #80601E);
+  color: #FFF8E9;
+  border: 1px solid var(--primary, #80601E);
+}
+
+.saved-worker-actions a:hover {
+  background: var(--primary-dark, #604515);
+  color: #FFF8E9;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 14px rgba(96, 69, 21, 0.16);
+}
+
+/* REMOVE SAVED WORKER BUTTON */
+
+.saved-worker-actions button {
+  background: #FBEAE7;
+  color: #A43E37;
+  border: 1px solid #EBC1BA;
+}
+
+.saved-worker-actions button:hover:not(:disabled) {
+  background: #F7DAD5;
+  transform: translateY(-2px);
+}
+
+.saved-worker-actions button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* =========================================
+   EMPTY STATE
+========================================= */
+
+.saved-workers-empty {
+  text-align: center;
+  background: var(--surface, #FAF5EA);
+  padding: 65px 24px;
+  border: 1px solid var(--border, #D8C7A9);
+  border-radius: 18px;
+  box-shadow: 0 8px 25px rgba(75, 52, 20, 0.06);
+}
+
+.saved-workers-empty svg {
+  color: var(--primary, #80601E);
+  margin-bottom: 18px;
+}
+
+.saved-workers-empty h2 {
+  color: var(--text-primary, #30271B);
+  margin-bottom: 12px;
+  font-size: 23px;
+}
+
+.saved-workers-empty p {
+  color: var(--text-secondary, #625440);
+  margin-bottom: 24px;
+  line-height: 1.7;
+}
+
+/* =========================================
+   EMPTY STATE ACTION
+========================================= */
+
+.saved-workers-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: var(--primary, #80601E);
+  color: #FFF8E9;
+  padding: 12px 22px;
+  border: 1px solid var(--primary, #80601E);
+  border-radius: 9px;
+  text-decoration: none;
+  font-weight: 700;
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.saved-workers-primary:hover {
+  background: var(--primary-dark, #604515);
+  color: #FFF8E9;
+  transform: translateY(-2px);
+}
+
+/* =========================================
+   ERROR MESSAGE
+========================================= */
+
+.saved-workers-error {
+  color: #A43E37;
+  background: #FBE5E2;
+  border: 1px solid #EBC1BA;
+  border-radius: 10px;
+  padding: 14px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* =========================================
+   RESPONSIVE DESIGN
+========================================= */
+
+@media (max-width: 600px) {
+  .saved-workers-page {
+    padding: 25px 15px 50px;
+  }
+
+  .saved-worker-card {
+    padding: 22px;
+  }
+
+  .saved-worker-actions {
+    flex-direction: column;
+  }
+
+  .saved-worker-actions a,
+  .saved-worker-actions button {
+    width: 100%;
+  }
+
+  .saved-workers-empty {
+    padding: 45px 20px;
+  }
+}

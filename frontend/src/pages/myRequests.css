@@ -1,0 +1,345 @@
+
+/* =========================================
+   MY SERVICE REQUESTS PAGE
+   PREMIUM DARK GOLD | BEIGE | CREAM
+========================================= */
+
+.my-requests-page {
+  min-height: 100vh;
+  background: var(--background, #E9DCC5);
+  padding: 40px 20px 80px;
+}
+
+.my-requests-container {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+/* BACK LINK */
+
+.my-requests-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  color: var(--primary-dark, #604515);
+  font-weight: 700;
+  text-decoration: none;
+  margin-bottom: 32px;
+  transition: color 0.2s ease;
+}
+
+.my-requests-back:hover {
+  color: var(--accent, #B89245);
+}
+
+/* =========================================
+   PAGE HEADING
+========================================= */
+
+.my-requests-header {
+  margin-bottom: 35px;
+}
+
+.my-requests-eyebrow {
+  display: inline-block;
+  color: var(--primary, #80601E);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+
+.my-requests-header h1 {
+  color: var(--text-primary, #30271B);
+  font-size: clamp(28px, 4vw, 38px);
+  margin-bottom: 12px;
+}
+
+.my-requests-header p {
+  color: var(--text-secondary, #625440);
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+/* =========================================
+   REQUEST CARDS
+========================================= */
+
+.my-requests-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.my-requests-card {
+  min-width: 0;
+  background: var(--surface, #FAF5EA);
+  border: 1px solid var(--border, #D8C7A9);
+  border-radius: 18px;
+  padding: 28px;
+  box-shadow: 0 8px 28px rgba(75, 52, 20, 0.07);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.my-requests-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--accent, #B89245);
+  box-shadow: 0 12px 32px rgba(75, 52, 20, 0.12);
+}
+
+.my-requests-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.my-requests-label {
+  display: block;
+  color: var(--text-muted, #82745E);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  margin-bottom: 8px;
+}
+
+.my-requests-card h2 {
+  color: var(--primary-dark, #604515);
+  font-size: 21px;
+  line-height: 1.4;
+}
+
+/* =========================================
+   STATUS BADGES
+========================================= */
+
+.my-requests-status {
+  display: inline-flex;
+  align-items: center;
+  padding: 7px 13px;
+  border-radius: 50px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: capitalize;
+  white-space: nowrap;
+}
+
+/* PENDING - AMBER */
+
+.my-requests-status.status-pending,
+.status-pending {
+  background: #FFF0CE;
+  color: #855A12;
+}
+
+/* ACCEPTED - GREEN */
+
+.my-requests-status.status-accepted,
+.status-accepted {
+  background: #E3F2E7;
+  color: #286343;
+}
+
+/* REJECTED - RED */
+
+.my-requests-status.status-rejected,
+.status-rejected {
+  background: #FBE5E2;
+  color: #A43E37;
+}
+
+/* COMPLETED - BLUE */
+
+.my-requests-status.status-completed,
+.status-completed {
+  background: #E5ECF8;
+  color: #345C91;
+}
+
+/* CANCELLED - NEUTRAL */
+
+.my-requests-status.status-cancelled,
+.status-cancelled {
+  background: #E8E0D4;
+  color: #625440;
+}
+
+/* =========================================
+   REQUEST INFORMATION
+========================================= */
+
+.my-requests-detail {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  color: var(--text-secondary, #625440);
+  margin-bottom: 16px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.my-requests-detail svg {
+  flex-shrink: 0;
+  color: var(--primary, #80601E);
+  margin-top: 2px;
+}
+
+/* =========================================
+   REQUEST DESCRIPTION
+========================================= */
+
+.my-requests-description {
+  background: var(--surface-muted, #F0E5D1);
+  border: 1px solid #E2D0AD;
+  border-radius: 12px;
+  padding: 18px;
+  margin-top: 22px;
+}
+
+.my-requests-description strong {
+  display: block;
+  color: var(--primary-dark, #604515);
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+
+.my-requests-description p {
+  color: var(--text-secondary, #625440);
+  font-size: 14px;
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+}
+
+/* =========================================
+   CARD FOOTER
+========================================= */
+
+.my-requests-footer {
+  border-top: 1px solid var(--border, #D8C7A9);
+  padding-top: 18px;
+  margin-top: 22px;
+  color: var(--text-muted, #82745E);
+  font-size: 12px;
+}
+
+/* =========================================
+   LOADING AND EMPTY STATES
+========================================= */
+
+.my-requests-message,
+.my-requests-empty {
+  background: var(--surface, #FAF5EA);
+  border: 1px solid var(--border, #D8C7A9);
+  border-radius: 18px;
+  padding: 50px 25px;
+  text-align: center;
+  color: var(--text-secondary, #625440);
+}
+
+.my-requests-empty svg {
+  color: var(--primary, #80601E);
+  margin-bottom: 18px;
+}
+
+.my-requests-empty h2 {
+  color: var(--primary-dark, #604515);
+  font-size: 23px;
+  margin-bottom: 12px;
+}
+
+.my-requests-empty p {
+  margin-bottom: 24px;
+  line-height: 1.7;
+}
+
+/* =========================================
+   ACTION BUTTONS
+========================================= */
+
+.my-requests-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 13px 24px;
+  background: var(--primary, #80601E);
+  color: #FFF8E9;
+  border: 1px solid var(--primary, #80601E);
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: 700;
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.my-requests-button:hover:not(:disabled) {
+  background: var(--primary-dark, #604515);
+  color: #FFF8E9;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(96, 69, 21, 0.18);
+}
+
+.my-requests-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+button.my-requests-button {
+  cursor: pointer;
+  margin-top: 16px;
+}
+
+/* =========================================
+   REVIEWED INDICATOR
+========================================= */
+
+.my-requests-reviewed {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #286343;
+  font-weight: 700;
+  margin-top: 16px;
+  font-size: 14px;
+}
+
+/* =========================================
+   RESPONSIVE DESIGN
+========================================= */
+
+@media (max-width: 768px) {
+  .my-requests-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .my-requests-page {
+    padding: 25px 16px 60px;
+  }
+
+  .my-requests-card {
+    padding: 22px;
+  }
+
+  .my-requests-header {
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 400px) {
+  .my-requests-card-top {
+    flex-direction: column;
+  }
+
+  .my-requests-button {
+    width: 100%;
+  }
+}

@@ -1,0 +1,349 @@
+
+/* =========================================
+   WORKER PROFILE PAGE
+   PREMIUM DARK GOLD | BEIGE | CREAM
+========================================= */
+
+.worker-profile-page {
+  min-height: 85vh;
+  background: var(--background, #E9DCC5);
+  padding: 42px 20px 80px;
+}
+
+.worker-profile-container {
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+/* =========================================
+   BACK BUTTON
+========================================= */
+
+.worker-profile-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  border: none;
+  background: transparent;
+  color: var(--primary-dark, #604515);
+  font-weight: 700;
+  margin-bottom: 28px;
+  cursor: pointer;
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.worker-profile-back:hover {
+  color: var(--accent, #B89245);
+  transform: translateX(-3px);
+}
+
+/* =========================================
+   PAGE HEADING
+========================================= */
+
+.worker-profile-heading {
+  margin-bottom: 28px;
+}
+
+.worker-profile-heading span {
+  color: var(--primary, #80601E);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.worker-profile-heading h1 {
+  color: var(--text-primary, #30271B);
+  font-size: clamp(27px, 4vw, 38px);
+  margin: 12px 0;
+  letter-spacing: -0.8px;
+}
+
+.worker-profile-heading p {
+  color: var(--text-secondary, #625440);
+  line-height: 1.7;
+}
+
+/* =========================================
+   PROFILE FORM CARD
+========================================= */
+
+.worker-profile-card {
+  background: var(--surface, #FAF5EA);
+  border: 1px solid var(--border, #D8C7A9);
+  border-radius: 20px;
+  padding: 36px;
+  box-shadow: 0 12px 35px rgba(75, 52, 20, 0.09);
+}
+
+/* =========================================
+   FORM GRID
+========================================= */
+
+.worker-profile-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 25px;
+}
+
+/* FORM LABELS */
+
+.worker-profile-field label {
+  display: block;
+  font-weight: 600;
+  color: var(--text-primary, #30271B);
+  margin-bottom: 10px;
+}
+
+/* =========================================
+   INPUT FIELDS
+========================================= */
+
+.worker-profile-input {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border: 1px solid var(--border, #D8C7A9);
+  border-radius: 10px;
+  padding: 0 14px;
+  color: var(--primary, #80601E);
+  background: #FFFDF8;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.worker-profile-input:focus-within {
+  border-color: var(--primary, #80601E);
+  box-shadow: 0 0 0 3px rgba(128, 96, 30, 0.13);
+}
+
+.worker-profile-input input {
+  width: 100%;
+  min-width: 0;
+  padding: 14px 0;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: var(--text-primary, #30271B);
+  font: inherit;
+}
+
+.worker-profile-input input::placeholder {
+  color: var(--text-muted, #82745E);
+}
+
+/* FULL WIDTH FIELDS */
+
+.worker-profile-wide {
+  grid-column: 1 / -1;
+}
+
+/* HELPER TEXT */
+
+.worker-profile-field small {
+  display: block;
+  color: var(--text-secondary, #625440);
+  margin-top: 8px;
+  line-height: 1.5;
+}
+
+/* =========================================
+   AVAILABILITY SECTION
+========================================= */
+
+.worker-availability {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin: 32px 0;
+  padding: 24px;
+  border: 1px solid #E2D0AD;
+  border-radius: 12px;
+  background: var(--primary-light, #F1E5CC);
+}
+
+.worker-availability h3 {
+  color: var(--primary-dark, #604515);
+  margin-bottom: 6px;
+}
+
+.worker-availability p {
+  color: var(--text-secondary, #625440);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* =========================================
+   AVAILABILITY TOGGLE
+========================================= */
+
+.worker-switch {
+  position: relative;
+  display: inline-block;
+  width: 52px;
+  height: 30px;
+  flex-shrink: 0;
+}
+
+.worker-switch input {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.worker-switch-slider {
+  position: absolute;
+  inset: 0;
+  background: #C9BCA7;
+  border-radius: 30px;
+  transition: background 0.2s ease;
+  pointer-events: none;
+}
+
+.worker-switch-slider::before {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  left: 4px;
+  top: 4px;
+  background: #FFFDF8;
+  border-radius: 50%;
+  box-shadow: 0 1px 4px rgba(48, 39, 27, 0.16);
+  transition: transform 0.2s ease;
+}
+
+/* ACTIVE TOGGLE */
+
+.worker-switch input:checked + .worker-switch-slider {
+  background: var(--primary, #80601E);
+}
+
+.worker-switch input:checked + .worker-switch-slider::before {
+  transform: translateX(22px);
+}
+
+/* KEYBOARD ACCESSIBILITY */
+
+.worker-switch input:focus-visible + .worker-switch-slider {
+  outline: 3px solid #C7AD79;
+  outline-offset: 3px;
+}
+
+/* =========================================
+   SAVE PROFILE BUTTON
+========================================= */
+
+.worker-profile-save {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: var(--primary, #80601E);
+  color: #FFF8E9;
+  border: 1px solid var(--primary, #80601E);
+  padding: 15px 28px;
+  border-radius: 10px;
+  font-weight: 700;
+  cursor: pointer;
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.worker-profile-save:hover:not(:disabled) {
+  background: var(--primary-dark, #604515);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(96, 69, 21, 0.18);
+}
+
+.worker-profile-save:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+/* =========================================
+   ERROR AND SUCCESS MESSAGES
+========================================= */
+
+.worker-profile-error,
+.worker-profile-success {
+  padding: 13px 16px;
+  border-radius: 10px;
+  margin-bottom: 22px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.worker-profile-error {
+  background: #F9E3DF;
+  color: #A43E37;
+  border: 1px solid #EBC1BA;
+}
+
+.worker-profile-success {
+  background: #E6F2E8;
+  color: #286343;
+  border: 1px solid #B9D8C2;
+}
+
+/* =========================================
+   LOADING / STATUS MESSAGE
+========================================= */
+
+.worker-profile-status {
+  text-align: center;
+  padding: 50px 20px;
+  color: var(--text-secondary, #625440);
+}
+
+/* =========================================
+   RESPONSIVE DESIGN
+========================================= */
+
+@media (max-width: 700px) {
+  .worker-profile-page {
+    padding: 28px 15px 60px;
+  }
+
+  .worker-profile-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .worker-profile-card {
+    padding: 22px;
+  }
+
+  .worker-availability {
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .worker-profile-heading h1 {
+    font-size: 29px;
+  }
+}
+
+@media (max-width: 400px) {
+  .worker-profile-card {
+    padding: 18px;
+  }
+
+  .worker-availability {
+    gap: 12px;
+  }
+
+  .worker-profile-save {
+    width: 100%;
+  }
+}

@@ -1,0 +1,55 @@
+
+/* =========================================
+   LOCALWORKERS - APP STYLES
+   PREMIUM DARK GOLD | BEIGE | CREAM
+========================================= */
+
+/* MAIN APPLICATION */
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* APP WRAPPER */
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--background, #E9DCC5);
+  color: var(--text-primary, #30271B);
+}
+
+/* MAIN CONTENT */
+
+.app-main {
+  flex: 1;
+  width: 100%;
+}
+
+/* ACCESSIBLE KEYBOARD FOCUS */
+
+:focus-visible {
+  outline: 2px solid var(--accent, #B89245);
+  outline-offset: 3px;
+}
+
+/* SMOOTH NAVIGATION */
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* RESPONSIVE MEDIA */
+
+img,
+video {
+  max-width: 100%;
+}
+
+/* PREVENT HORIZONTAL OVERFLOW */
+
+body {
+  min-width: 320px;
+}
